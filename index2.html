@@ -1,0 +1,859 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    
+    <section id="Home">
+        <nav>
+            <div class="logo">
+                <img src="image/logo.png">
+            </div>
+            <select id="language" class ="nn">
+                <option value="en">Tiếng Việt</option>
+                <option value="vi">English</option>
+              </select>
+            <p id="greeting"></p>
+            <script>
+                const languageSelect = document.getElementById('language');
+                const greeting = document.getElementById('greeting');
+            
+                languageSelect.addEventListener('change', () => {
+                  const selectedLanguage = languageSelect.value;
+                  let message;
+            
+                  if (selectedLanguage === 'vi') {
+                    window.location.href = 'index2.html'
+                  } else if (selectedLanguage === 'en') {
+                    window.location.href = 'index.html'
+                  }
+            
+                  greeting.textContent = message;
+                });
+            </script>
+            <img src="image/shipper.gif" width="400" height="40" class="gif" >
+            <ul>
+                <li><a href="#Home">Trang Chủ</a></li>
+                <li><a href="#About">Chúng Tôi</a></li>
+                <li><a href="#Menu">Thực Đơn</a></li>
+                <li><a href="#Gallary">Sản Phẩm</a></li>
+                <li><a href="#Review">Giới Thiệu</a></li>
+                <li><a href="#Order">Gọi Món</a></li>
+            </ul>
+
+            <div class="icon">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <i class="fa-solid fa-heart"></i>
+                <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+
+        </nav>
+
+        <div class="main">
+
+            <div class="men_text">
+                <h1>Có được<span>Thực Phẩm</span><br>Tươi Sống 1 Cách Dễ Dàng</h1>
+            </div>
+
+            <div class="main_image">
+                <img src="image/main_img.png">
+            </div>
+
+        </div>
+
+        <p>
+            Từ những cánh đồng xanh mát, chúng tôi mang đến cho bạn những trái cây, rau củ tươi ngon nhất. Mỗi sản phẩm đều mang theo hương vị đặc trưng của đất trời, giúp bạn có những bữa ăn ngon miệng và bổ dưỡng
+        </p>
+
+        <div class="main_btn">
+            <a href="#">Gọi Món Ngay </a>
+            <i class="fa-solid fa-angle-right"></i>
+        </div>
+
+    </section>
+
+
+
+    <!--About-->
+
+    <div class="about" id="About">
+        <div class="about_main">
+
+            <div class="image">
+                <img src="image/Food-Plate.png">
+            </div>
+
+            <div class="about_text">
+                <h1><span>Chúng</span>Tôi</h1>
+                <h3>lý do bạn chọn chúng tôi</h3>
+                <p>
+                    Mỗi sản phẩm trước khi đến tay khách hàng đều được kiểm tra chất lượng nghiêm ngặt, đảm bảo đáp ứng các tiêu chuẩn vệ sinh an toàn thực phẩm
+                </p>
+            </div>
+
+        </div>
+
+        <a href="#" class="about_btn">Gọi Món Ngay</a>
+
+    </div>
+
+
+
+    <!--Menu-->
+
+    <div class="menu" id="Menu">
+        <h1>Chúng Tôi<span>Có</span></h1>
+
+        <div class="menu_box">
+            <div class="menu_card">
+
+                <div class="menu_image">
+                    <img src="image/buger.jpg">
+                </div>
+
+                <div class="small_card">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+
+                <div class="menu_info">
+                    <h2>Buger</h2>
+                    <p>
+                        Cảm nhận vị béo ngậy của thịt, sự giòn tan của rau và sốt đặc biệt chỉ có tại quán chúng tôi
+                    </p>
+                    <h3>50.000</h3>
+                    <div class="menu_icon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <a href="#" class="menu_btn">Gọi Món Ngay</a>
+                </div>
+
+            </div> 
+            
+            <div class="menu_card">
+
+                <div class="menu_image">
+                    <img src="image/pasta.jpg">
+                </div>
+
+                <div class="small_card">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+
+                <div class="menu_info">
+                    <h2>Mỳ</h2>
+                    <p>
+                        Hàng trăm loại sốt, vô vàn topping, tạo nên những món pasta độc đáo chỉ riêng bạn
+                    </p>
+                    <h3>50.000</h3>
+                    <div class="menu_icon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <a href="#" class="menu_btn">Gọi Món Ngay</a>
+                </div>
+
+            </div> 
+
+            <div class="menu_card">
+
+                <div class="menu_image">
+                    <img src="image/lasagna.webp">
+                </div>
+
+                <div class="small_card">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+
+                <div class="menu_info">
+                    <h2>lasagna</h2>
+                    <p>
+                        Lasagna Ý truyền thống, lớp lớp hương vị, tan chảy trong từng miếng
+                    </p>
+                    <h3>50.000</h3>
+                    <div class="menu_icon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <a href="#" class="menu_btn">Gọi Món Ngay</a>
+                </div>
+
+            </div> 
+
+            <div class="menu_card">
+
+                <div class="menu_image">
+                    <img src="image/chocolate_Drink.jpg">
+                </div>
+
+                <div class="small_card">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+
+                <div class="menu_info">
+                    <h2>Cà Phê</h2>
+                    <p>
+                        Bắt đầu ngày mới thật sảng khoái với hương vị cà phê đậm đà
+                    </p>
+                    <h3>50.000</h3>
+                    <div class="menu_icon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <a href="#" class="menu_btn">Gọi Món Ngay</a>
+                </div>
+
+            </div> 
+
+            <div class="menu_card">
+
+                <div class="menu_image">
+                    <img src="image/pizza.jpg">
+                </div>
+
+                <div class="small_card">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+
+                <div class="menu_info">
+                    <h2>pizza</h2>
+                    <p>
+                        Từ pizza Ý truyền thống đến pizza fusion đầy mới lạ, chúng tôi đáp ứng mọi sở thích
+                    </p>
+                    <h3>50.000</h3>
+                    <div class="menu_icon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <a href="#" class="menu_btn">Gọi Món Ngay</a>
+                </div>
+
+            </div> 
+
+            <div class="menu_card">
+
+                <div class="menu_image">
+                    <img src="image/Hot_dog.jpg">
+                </div>
+
+                <div class="small_card">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+
+                <div class="menu_info">
+                    <h2>Hot Dog</h2>
+                    <p>
+                        Món ăn đường phố kinh điển, thơm ngon khó cưỡng
+                    </p>
+                    <h3>50.000</h3>
+                    <div class="menu_icon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <a href="#" class="menu_btn">Gọi Món Ngay</a>
+                </div>
+
+            </div> 
+
+            <div class="menu_card">
+
+                <div class="menu_image">
+                    <img src="image/juse.jpg">
+                </div>
+
+                <div class="small_card">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+
+                <div class="menu_info">
+                    <h2>Nước ép</h2>
+                    <p>
+                        Nước ép tươi mát, vị ngon từ thiên nhiên
+                    </p>
+                    <h3>50.000</h3>
+                    <div class="menu_icon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <a href="#" class="menu_btn">Gọi Món Ngay</a>
+                </div>
+
+            </div> 
+
+            <div class="menu_card">
+
+                <div class="menu_image">
+                    <img src="image/biryani.webp">
+                </div>
+
+                <div class="small_card">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+
+                <div class="menu_info">
+                    <h2>Biryani</h2>
+                    <p>
+                        Sự hòa quyện hoàn hảo giữa thịt thơm ngon, gạo Basmati hảo hạng và các loại gia vị đặc trưng
+                    </p>
+                    <h3>50.000</h3>
+                    <div class="menu_icon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <a href="#" class="menu_btn">Gọi Món Ngay</a>
+                </div>
+
+            </div> 
+
+            <div class="menu_card">
+
+                <div class="menu_image">
+                    <img src="image/chocolate.jpg">
+                </div>
+
+                <div class="small_card">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+
+                <div class="menu_info">
+                    <h2>Chocolate</h2>
+                    <p>
+                        Món quà ngọt ngào, tình yêu đong đầy! Socola thơm ngon, tan chảy trong miệng, mang đến những khoảnh khắc ngọt ngào
+                    </p>
+                    <h3>50.000</h3>
+                    <div class="menu_icon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <a href="#" class="menu_btn">Gọi Món Ngay</a>
+                </div>
+
+            </div> 
+
+            <div class="menu_card">
+
+                <div class="menu_image">
+                    <img src="image/ice_cream.jpg">
+                </div>
+
+                <div class="small_card">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+
+                <div class="menu_info">
+                    <h2>Kem</h2>
+                    <p>
+                        Bạn đã thử hương vị kem độc đáo này chưa? Chắc chắn sẽ khiến bạn bất ngờ đấy
+                    </p>
+                    <h3>50.000</h3>
+                    <div class="menu_icon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <a href="#" class="menu_btn">Gọi Món Ngay</a>
+                </div>
+
+            </div> 
+
+            <div class="menu_card">
+
+                <div class="menu_image">
+                    <img src="image/Spanchi.jpg">
+                </div>
+
+                <div class="small_card">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+
+                <div class="menu_info">
+                    <h2>Spanchi</h2>
+                    <p>
+                     Món ăn kết hợp hài hòa giữa vị béo ngậy của phô mai, vị thơm của thịt và độ giòn của vỏ bánh, chắc chắn sẽ khiến bạn thích mê
+                    </p>
+                    <h3>50.000</h3>
+                    <div class="menu_icon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <a href="#" class="menu_btn">Gọi Món Ngay</a>
+                </div>
+
+            </div> 
+
+            <div class="menu_card">
+
+                <div class="menu_image">
+                    <img src="image/sandwich.jpg">
+                </div>
+
+                <div class="small_card">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+
+                <div class="menu_info">
+                    <h2>Sandwich</h2>
+                    <p>
+                        Sandwich thơm ngon, đầy đủ dinh dưỡng, là lựa chọn hoàn hảo cho bữa sáng hoặc bữa trưa
+                    </p>
+                    <h3>50.000</h3>
+                    <div class="menu_icon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <a href="#" class="menu_btn">Gọi Món Ngay</a>
+                </div>
+
+            </div> 
+            
+        </div>
+
+    </div>
+
+
+
+
+    <!--Gallary-->
+
+    <div class="gallary" id="Gallary">
+        <h1>Những<span>Sản Phẩm</span></h1>
+
+        <div class="gallary_image_box">
+            <div class="gallary_image">
+                <img src="image/gallary_1.jpg">
+
+                <h3>Sandwich</h3>
+                <p>
+                    Sandwich thơm ngon, đầy đủ dinh dưỡng, là lựa chọn hoàn hảo cho bữa sáng hoặc bữa trưa
+                </p>
+                <a href="#" class="gallary_btn">Gọi Món Ngay</a>
+            </div>
+
+            <div class="gallary_image">
+                <img src="image/gallary_2.jpg">
+
+                <h3>Bánh ngọt</h3>
+                <p>
+                    Bánh ngọt mềm mịn, hương vị thơm ngon, là món tráng miệng hoàn hảo cho mọi bữa ăn
+                </p>
+                <a href="#" class="gallary_btn">Gọi Món Ngay</a>
+            </div>
+
+            <div class="gallary_image">
+                <img src="image/gallary_3.jpg">
+
+                <h3>Bánh Chocolate</h3>
+                <p>
+                    Bạn đã thử bánh kem sô cô la đậm đà 
+                </p>
+                <a href="#" class="gallary_btn">Gọi Món Ngay</a>
+            </div>
+
+            <div class="gallary_image">
+                <img src="image/gallary_4.jpg">
+
+                <h3>Bánh Nhân Việt Quất</h3>
+                <p>
+                    Bánh nhân việt quất thơm ngon, vị chua ngọt hài hòa, là lựa chọn tuyệt vời cho những ai yêu thích hương vị trái cây tươi mát
+                </p>
+                <a href="#" class="gallary_btn">Gọi Món Ngay</a>
+            </div>
+
+            <div class="gallary_image">
+                <img src="image/gallary_5.jpg">
+
+                <h3>Pizza</h3>
+                <p>
+                    Pizza thơm ngon, nóng hổi, là lựa chọn hoàn hảo cho bữa ăn gia đình hoặc bạn bè
+                </p>
+                <a href="#" class="gallary_btn">Gọi Món Ngay</a>
+            </div>
+
+            <div class="gallary_image">
+                <img src="image/gallary_6.jpg">
+
+                <h3>Bánh Hoa Quả</h3>
+                <p>
+                    Bánh được làm từ lớp bánh bông lan mềm mịn, kết hợp cùng nhiều loại hoa quả tươi ngon, tạo nên một hương vị độc đáo 
+                </p>
+                <a href="#" class="gallary_btn">Gọi Món Ngay</a>
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+
+    <!--Review-->
+
+    <div class="review" id="Review">
+        <h1>Về<span>Chúng Tôi</span></h1>
+
+        <div class="review_box">
+            <div class="review_card">
+
+                <div class="review_profile">
+                    <img src="image/review_1.png">
+                </div>
+
+                <div class="review_text">
+                    <h2 class="name">Sofia</h2>
+
+                    <div class="review_icon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+
+                    <div class="review_social">
+                        <i class="fa-brands fa-facebook-f"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </div>
+
+                    <p>
+                        Đầu bếp không chỉ là người nấu ăn, mà còn là những nghệ sĩ ẩm thực. Với đôi bàn tay khéo léo và trí tưởng tượng phong phú, họ biến những nguyên liệu đơn giản thành những tác phẩm nghệ thuật đầy màu sắc trên đĩa. Mỗi món ăn họ tạo ra đều là một câu chuyện, một trải nghiệm ẩm thực độc đáo
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="review_card">
+
+                <div class="review_profile">
+                    <img src="image/review_2.png">
+                </div>
+
+                <div class="review_text">
+                    <h2 class="name">Ethan</h2>
+
+                    <div class="review_icon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+
+                    <div class="review_social">
+                        <i class="fa-brands fa-facebook-f"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </div>
+
+                    <p>
+                        Đằng sau mỗi món ăn ngon là sự kết hợp hài hòa của kỹ thuật nấu nướng tinh tế và kinh nghiệm lâu năm. Đầu bếp là những chuyên gia ẩm thực, họ không chỉ nắm vững các phương pháp chế biến truyền thống mà còn không ngừng học hỏi và sáng tạo ra những công thức mới. Kỹ năng của họ được rèn luyện qua từng ngày, từ việc lựa chọn nguyên liệu tươi ngon đến việc trình bày món ăn một cách đẹp mắt
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="review_card">
+
+                <div class="review_profile">
+                    <img src="image/review_3.png">
+                </div>
+
+                <div class="review_text">
+                    <h2 class="name">Aura</h2>
+
+                    <div class="review_icon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+
+                    <div class="review_social">
+                        <i class="fa-brands fa-facebook-f"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </div>
+
+                    <p>
+                        Đầu bếp là những người yêu nghề, họ dành trọn trái tim và tâm hồn cho từng món ăn. Đam mê nấu nướng thôi thúc họ không ngừng tìm tòi, khám phá những hương vị mới lạ. Với họ, mỗi món ăn đều là một tác phẩm nghệ thuật mà họ muốn chia sẻ với mọi người
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="review_card">
+
+                <div class="review_profile">
+                    <img src="image/review_4.png">
+                </div>
+
+                <div class="review_text">
+                    <h2 class="name">Noah</h2>
+
+                    <div class="review_icon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+
+                    <div class="review_social">
+                        <i class="fa-brands fa-facebook-f"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </div>
+
+                    <p>
+                        Đầu bếp là những người làm việc chuyên nghiệp, họ làm việc trong môi trường nhà hàng khách sạn với cường độ cao. Họ phải đảm bảo chất lượng món ăn, vệ sinh an toàn thực phẩm và làm việc hiệu quả dưới áp lực. Sự tỉ mỉ, chính xác và khả năng làm việc nhóm là những phẩm chất cần thiết của một đầu bếp chuyên nghiệp
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <!--Order-->
+
+    <div class="order" id="Order">
+        <h1><span>Gọi Món</span>Ngay</h1>
+
+        <div class="order_main">
+
+            <div class="order_image">
+                <img src="image/order_image.png">
+            </div>
+
+            <form action="#">
+
+                <div class="input">
+                    <p>Tên</p>
+                    <input type="text" placeholder="họ và tên">
+                </div>
+
+                <div class="input">
+                    <p>Email</p>
+                    <input type="email" placeholder="địa chỉ email">
+                </div>
+
+                <div class="input">
+                    <p>Số Điện Thoại</p>
+                    <input placeholder="số điện thoại liên lạc">
+                </div>
+
+                <div class="input">
+                    <p>Số Lượng</p>
+                    <input type="number" placeholder="số lượng">
+                </div>
+
+                <div class="input">
+                    <p>Tên Món</p>
+                    <input placeholder="món mà bạn muốn đặt">
+                </div>
+
+                <div class="input">
+                    <p>Địa Chỉ</p>
+                    <input placeholder="địa chỉ nhận hàng">
+                </div>
+
+                <a href="#" class="order_btn">Gọi Món Ngay</a>
+
+            </form>
+
+        </div>
+
+    </div>
+
+
+
+    <!--Team-->
+
+    <div class="team">
+        <h1>Nhóm<span>Chúng Tôi</span></h1>
+
+        <div class="team_box">
+            <div class="profile">
+                <img src="image/chef1.png">
+
+                <div class="info">
+                    <h2 class="name">Chef</h2>
+                    <p class="bio">Đầu bếp là những nghệ sĩ ẩm thực</p>
+
+                    <div class="team_icon">
+                        <i class="fa-brands fa-facebook-f"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="profile">
+                <img src="image/chef2.png">
+
+                <div class="info">
+                    <h2 class="name">Chef</h2>
+                    <p class="bio">Bếp là sân khấu, đầu bếp là diễn viên chính</p>
+
+                    <div class="team_icon">
+                        <i class="fa-brands fa-facebook-f"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="profile">
+                <img src="image/chef3.jpg">
+
+                <div class="info">
+                    <h2 class="name">Chef</h2>
+                    <p class="bio">Mỗi món ăn là một tác phẩm nghệ thuật mang dấu ấn riêng của đầu bếp</p>
+
+                    <div class="team_icon">
+                        <i class="fa-brands fa-facebook-f"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="profile">
+                <img src="image/chef4.jpg">
+
+                <div class="info">
+                    <h2 class="name">Chef</h2>
+                    <p class="bio">Đầu bếp không chỉ nấu ăn, mà còn kể những câu chuyện qua từng món ăn</p>
+
+                    <div class="team_icon">
+                        <i class="fa-brands fa-facebook-f"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <!--Footer-->
+
+    <footer>
+        <div class="footer_main">
+
+            <div class="footer_tag">
+                <h2>Quốc Gia</h2>
+                <p>Sri Lanka</p>
+                <p>Mỹ</p>
+                <p>Ấn Độ</p>
+                <p>Nhật Bản</p>
+                <p>Ý</p>
+            </div>
+
+            <div class="footer_tag">
+                <h2>Đường Dẫn</h2>
+                <p>Trang Chủ</p>
+                <p>Chúng Tôi</p>
+                <p>Thực Đơn</p>
+                <p>Sản Phẩm</p>
+                <p>Gọi Món</p>
+            </div>
+
+            <div class="footer_tag">
+                <h2>Phản Hồi</h2>
+                <p>+94 12 3456 789</p>
+                <p>+94 25 5568456</p>
+                <p>johndeo123@gmail.com</p>
+                <p>foodshop123@gmail.com</p>
+            </div>
+
+            <div class="footer_tag">
+                <h2>Dịch Vụ</h2>
+                <p>Giao Hàng Nhanh</p>
+                <p>Thanh Toán Dễ Dàng</p>
+                <p>Phục Vụ 24 x 7</p>
+            </div>
+
+            <div class="footer_tag">
+                <h2>Theo Dõi</h2>
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-linkedin-in"></i>
+            </div>
+
+        </div>
+
+        <p class="end">Design by<span><i class="fa-solid fa-face-grin"></i> WT Master Code And Humg Student</span></p>
+
+    </footer>
+
+
+
+    
+</body>
+</html>
